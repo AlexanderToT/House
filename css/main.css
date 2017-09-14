@@ -1,0 +1,120 @@
+html{height: 100%;width: 100%;background: #f6f6f6;min-width: 1300px; overflow: auto;}
+body{background: #f6f6f6;}
+.container{width: 1200px;margin: 0 auto;}
+/*头部*/
+header{width: 100%;height: 70px; margin: 0 auto;background: white;}
+.logo{height: 70px; width: 197px;margin-left: -15px;float: left;cursor: pointer;}
+nav{line-height: 70px;float: left;margin-left: 460px;}
+nav a{font-size: 16px; color: #222222;padding: 0 10px;font-weight: bold;}
+.phone{background: url(../images/icon.jpg)no-repeat left center; display: block; width: 120px;height: 70px;float: right;line-height: 70px;text-indent: 16px;color: #666666;font-size: 12px;}
+/*底部 footer*/
+footer{width: 100%;height: 257px; background: #eeeeee;}
+.footer_main{width: 100%;height: 194px;border-bottom: 1px solid #dcdcdc;}
+.footer_main_l{height: 100%;width: 193px;overflow: hidden;float: left;}
+.footer_main_l p:nth-child(1){font-size: 20px;line-height: 40px; color: #666666;margin-top: 40px;}
+.footer_main_l p:nth-child(2){font-size: 12px;color: #9f9f9f;line-height: 20px;}
+.footer_main_c{margin-left: 285px;margin-top:35px;float: left; font-size: 12px;color: #676767; width: 500px;}
+.footer_main_c li{width: 100%;float: left;height: 35px;line-height: 35px;}
+.footer_main_c li span{display: block;float: left;width: 80px;}
+.footer_main_c li a{color:#676767 ;float: left;margin: 0 15px;}
+.footer_main_r{float: right;margin-top:40px;width: 127px;text-align: center; font-size: 12px; color: #9f9f9f;}
+.footer_f{height: 60px; line-height: 60px;font-size: 12px;color: #9f9f9f;}
+.footer_f a{color: #337ab7;margin: 0 20px;background: url(../images/bq_30.jpg) no-repeat left center;padding-left: 16px;}
+/*banner部分代码*/
+.banner{position: relative; width: 100%; height:560px ;}
+.banner_1{width: 100%;height:560px; background: url(../images/banner_main1.jpg) no-repeat center top;position:absolute;}
+.banner_2{width: 100%;height:560px; background: url(../images/banner_main2.jpg) no-repeat center top;position:absolute;display: none;}
+.banner_3{width: 100%;height:560px; background: url(../images/banner_main3.jpg) no-repeat center top;position:absolute;display: none;}
+.order{width:100%; position:absolute;top:530px;text-align: center;}
+.order li{ display:inline-block; width:20px; height:20px;background: white;border-radius: 50%;margin: 0 15px; cursor: pointer; text-align: center;line-height: 20px;}
+.order .on{ background: chocolate;}
+/*banner下面主体部分*/
+.manage{margin-top:80px;width: 100%;height: 270px;overflow: hidden;}
+.manage_l{width: 690px;height: 270px;overflow: hidden; float: left;}
+.manage_r{float: right;height: 270px;width790px;overflow: hidden;}
+.title_one{background: url(../images/title_03.jpg) no-repeat center center;width: 100%;height: 210px;}
+.title_two{background: url(../images/title_06.jpg) no-repeat center center;width: 100%;height: 210px;}
+.wrap{position: relative; width: 100%;}
+.btn{position: absolute;top: 50%;margin-top: -15px; cursor: pointer; width: 100%; }
+.btn .prev ,.btn .prev_two{display: none; width: 25px; height: 36px; background: url(../images/icon.png);float: left;margin-left: -40px;overflow: hidden;background-position: -58px 40px;}
+.btn .next ,.btn .next_two{display: block; width: 25px; height: 36px; background: url(../images/icon.png);float: right; margin-right: -30px;overflow: hidden;background-position: 0px 40px;}
+.scroll{width: 1200px;height: 396px;overflow: hidden; position: relative;}
+.scroll ul{width:3600px;height: 100%; position: absolute;top: 0; left: 0px;}
+.scroll li{float:left;width: 390px;height: 100%;margin-right: 10px;overflow: hidden;background: white;}
+.scroll_img{display: block;width: 100%;height: 240px;overflow: hidden;}
+.intro{width: 370px;height:156px ;padding-left: 20px;}
+.price{height: 60px;line-height: 60px; font-size: 24px; color: #fa6607;}
+.price .te{font-size: 16px;}
+.address{height: 36px;line-height: 36px;font-size: 18px;}
+.address a{color: black;}
+.detail{height: 60px;line-height: 60px; color: #fa6607;font-size: 18px;}
+.banner_bar{margin-top: 70px;background: url(../images/title_08.jpg) no-repeat  center center;height: 344px;width: 100%;overflow: hidden;}
+.profile{width: 100%;background: white;}
+.title_three{height: 120px;width: 100%;background: url(../images/title_13.jpg) no-repeat center center;overflow: hidden;background-position-x: 30px;}
+.pro_list{width: 100%;height: 70px;overflow: hidden;}
+.pro_list_li{width: 230px;height: 70px;float: left;margin-right: 70px;}
+.pro_list_li:nth-child(1){background: url(../images/icon1.png) no-repeat left center;}
+.pro_list_li:nth-child(2){background: url(../images/icon2.png) no-repeat left center;}
+.pro_list_li:nth-child(3){background: url(../images/icon3.png) no-repeat left center;}
+.pro_list_li:nth-child(4){background: url(../images/icon4.png) no-repeat left center;}
+.pro_list_li_title{margin-left: 60px; margin-top:10px;font-size: 20px;color: black;line-height: 30px;}
+.pro_list_li_tro{margin-left: 60px; line-height:16px;font-size: 12px;color: #acabab;}
+.pro_meun{width: 100%;height: 105px;margin-top: 60px;padding-bottom: 35px; overflow: hidden;}
+.pro_meun_l{float: left;height: 100%;width: 590px; border: 1px solid #eeeeee; border-radius: 5px;}
+.pro_meun_r{float: right;height: 100%;width: 590px;border: 1px solid #eeeeee; border-radius: 5px;}
+.pro_meun_img{height: 100%;float: left;}
+.pro_meun_title{font-size: 22px;color: black;margin-top: 35px;}
+.pro_meun_tro{font-size: 12px;color;#a0a0a0;line-height: 16px;}
+.profile.line{height: 50px;border-top: 1px solid #eeeeee}
+/*关于我们*/
+.shaow{box-shadow:  0px 3px 5px #d6d6d6;}
+.Abo_banner{background: #eeeeee;margin-top: 4px;}
+.Abo_ban_tit{width: 100%;height: 48px;line-height: 48px;font-size: 12px;}
+.Abo_ban_tit span:nth-child(1){color: #337ab7;}
+.Abo_banner_box{width: 100%;height: 384px;overflow: hidden; position:relative}
+.Abo_banner_view{height: 100%;width: 600px;margin: 0 auto;}
+.Abo_banner_view ul{width: 3000px;margin-left: -600px;}
+.Abo_banner_view li{float: left;}
+.Abo_banner_mask{float: left;height: 100%;width: 300px; position: absolute;top: 0;background: rgba(250,250,250,.5);}
+.Abo_banner_mask.left{left: 0;}
+.Abo_banner_mask.right{right: 0;}
+.banner_btn{height: 40px;width: 24px;position: absolute; cursor: pointer; top: 196px;overflow: hidden; display: block;}
+.btn_next{right: 0;  background: url(../images/icon.png); background-position-x: -30px; background-position-y: 45px;}
+.btn_prev{left: 0; background: url(../images/icon.png); background-position-x: -90px; background-position-y: 45px;}
+.Abo_main{float: left;width: 860px;height: auto;}
+.Abo_nav{height: 50px;margin: 0 auto;width: 850px;border-bottom: 1px solid #f37321;}
+.Abo_nav span{display: block; height: 38px; width: 120px; line-height: 38px; float: left;margin-top: 12px;text-align: center;font-size: 16px;font-weight: bolder; cursor: pointer;}
+.Abo_nav span.active{ background: #f37321; color: white;}
+.Abo_navbar{height:300px;margin: 0 auto;width: 850px;border-bottom: 1px solid #eeeeee;position: relative;}
+.Abo_navlist{width: 100%;height: 100%;position: absolute;}
+.Abo_navlist ul{ width: 485px;height: 100%;float: left; overflow: hidden;}
+.Abo_navlist ul:nth-child(2){width:360px}
+.Abo_navlist ul li{height: 37px; line-height: 37px;font-size: 13px; width: 100%;overflow: hidden;}
+.Abo_navlist ul li span:nth-child(1){display: block; width: 70px;text-align: right; float: left;color: #666666;}
+.Abo_navlist ul li span:nth-child(2){color: #333333;} 
+.Abo_main_title{width: 100%;height: 40px;line-height: 40px;font-size: 16px; font-weight: bold; text-indent: 30px;}
+.lbfx{height:300px;margin: 0 auto;width: 848px;border: 1px solid #eeeeee;overflow: hidden;}
+.lbfx ul{width: 810px;height:280px; margin-top: 20px;}
+.lbfx ul li{width: 270px;height: 100%; float: left;}
+.lbfx .img{}
+.dtzx{height:160px;margin: 0 auto;width: 848px;border: 1px solid #eeeeee;overflow: hidden;}
+
+
+.Abo_main_r{width: 340px;float: right;overflow: hidden;position: relative;background: url(../images/titl_03.jpg) no-repeat top center;background-size: 100%;}
+.Abo_form{width:338px;height:312px;border: 1px solid #e3e3e3;margin-top: 58px; }
+.Abo_form .name,.Abo_form .phone1{ display: block;width: 240px;height: 38px;margin: 0 auto; background: #f5f5f5;cursor: pointer; }
+.Abo_form .name{margin-top: 50px;}
+.Abo_form .phone1{margin-top: 25px;}
+.Abo_form .name img,.Abo_form .phone1 img{display: block; width: 37px;height: 37px; float: left;}
+.Abo_form .name input,.Abo_form .phone1 input{width: 180px;height: 36px;line-height: 36px;font-size: 14px;border: none;background: #f5f5f5;outline: medium;}
+.Abo_form .pleace{height: 58px;line-height: 58px;font-size: 14px;width: 100%;text-align: center;color: #cbcaca;border-bottom: 1px solid #e3e3e3;}
+.Abo_form  .nj_ok{width: 300px;height: 40px;margin: 30px auto 0 auto; border-radius: 5px; background: #f37321; text-align: center;color: white; font-size: 16px; border: none; outline: medium; display: block;}
+.Abo_yh{width: 100%;height: 80px;background: #fff4ed;margin-top: 15px;}
+.Abo_yh_bg{background: url(../images/yh_12.jpg) no-repeat left top; height: 32px;}
+.Abo_yh_txt{font-size: 12px;width: 210px; color: black; margin: 0 auto;line-height: 16px;}
+.Abo_form_tit span{font-size: 12px; color: #b5a9ae;}
+.Abo_form2{height: 154px;width: 308px; border: 1px solid #e3e3e3;background: #f9f9f9; padding: 0 15px;overflow: hidden;}
+.Abo_form2 ul{width: 350px;height: 70px;}
+.Abo_form2 li{ width: 115px; height: 20px; margin-top: 20px; float: left; font-size: 14px;}
+.Abo_form2 li input{ margin-right: 5px;display: block; margin-top: 4px;float: left;}
+.Abo_form2 .nj_ok{width: 115px;height: 40px;margin: 30px auto 0 auto; border-radius: 5px; background: #f37321; text-align: center;color: white; font-size: 16px; border: none; outline: medium; display: block;}
