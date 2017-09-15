@@ -1,6 +1,6 @@
 html{height: 100%;width: 100%;background: #f6f6f6;min-width: 1300px; overflow: auto;}
 body{background: #f6f6f6;}
-.container{width: 1200px;margin: 0 auto;}
+.container{width: 1200px;margin: 0 auto;overflow: hidden;}
 /*头部*/
 header{width: 100%;height: 70px; margin: 0 auto;background: white;}
 .logo{height: 70px; width: 197px;margin-left: -15px;float: left;cursor: pointer;}
@@ -31,7 +31,7 @@ footer{width: 100%;height: 257px; background: #eeeeee;}
 /*banner下面主体部分*/
 .manage{margin-top:80px;width: 100%;height: 270px;overflow: hidden;}
 .manage_l{width: 690px;height: 270px;overflow: hidden; float: left;}
-.manage_r{float: right;height: 270px;width790px;overflow: hidden;}
+.manage_r{float: right;height: 270px;width:790px;overflow: hidden;}
 .title_one{background: url(../images/title_03.jpg) no-repeat center center;width: 100%;height: 210px;}
 .title_two{background: url(../images/title_06.jpg) no-repeat center center;width: 100%;height: 210px;}
 .wrap{position: relative; width: 100%;}
@@ -64,7 +64,7 @@ footer{width: 100%;height: 257px; background: #eeeeee;}
 .pro_meun_r{float: right;height: 100%;width: 590px;border: 1px solid #eeeeee; border-radius: 5px;}
 .pro_meun_img{height: 100%;float: left;}
 .pro_meun_title{font-size: 22px;color: black;margin-top: 35px;}
-.pro_meun_tro{font-size: 12px;color;#a0a0a0;line-height: 16px;}
+.pro_meun_tro{font-size: 12px;color:#a0a0a0;line-height: 16px;}
 .profile.line{height: 50px;border-top: 1px solid #eeeeee}
 /*关于我们*/
 .shaow{box-shadow:  0px 3px 5px #d6d6d6;}
@@ -72,36 +72,57 @@ footer{width: 100%;height: 257px; background: #eeeeee;}
 .Abo_ban_tit{width: 100%;height: 48px;line-height: 48px;font-size: 12px;}
 .Abo_ban_tit span:nth-child(1){color: #337ab7;}
 .Abo_banner_box{width: 100%;height: 384px;overflow: hidden; position:relative}
-.Abo_banner_view{height: 100%;width: 600px;margin: 0 auto;}
-.Abo_banner_view ul{width: 3000px;margin-left: -600px;}
-.Abo_banner_view li{float: left;}
-.Abo_banner_mask{float: left;height: 100%;width: 300px; position: absolute;top: 0;background: rgba(250,250,250,.5);}
-.Abo_banner_mask.left{left: 0;}
-.Abo_banner_mask.right{right: 0;}
-.banner_btn{height: 40px;width: 24px;position: absolute; cursor: pointer; top: 196px;overflow: hidden; display: block;}
-.btn_next{right: 0;  background: url(../images/icon.png); background-position-x: -30px; background-position-y: 45px;}
-.btn_prev{left: 0; background: url(../images/icon.png); background-position-x: -90px; background-position-y: 45px;}
+
+.Abo_banner .full {width:1200px;overflow: hidden;margin: 0 auto;height: 380px;}
+.Abo_banner .content {width: 600px;margin: 0 auto;position: relative;}
+.Abo_banner .cover-left {width: 2000px;position: absolute;left: -2000px;top: 0;opacity: 0.7;background:white;height: 380px;z-index: 10;}
+.Abo_banner .cover-right {width: 2000px;position: absolute;right: -2000px;top: 0;background: white;opacity: 0.7;height: 380px;z-index: 10;}
+.Abo_banner .swiper-container {overflow: visible;height: 380px;}
+.Abo_banner .swiper-slide {height: 380px;background: white;position: relative;}
+.Abo_banner .swiper-slide img {max-width: 100%;-webkit-transition: all linear 300ms;transition: all linear 300ms;}
+.Abo_banner .arrow-left { background: url(../images/icon.png); background-position-x: -85px; background-position-y: 45px;position: absolute;left: -280px;top: 50%;margin-top: -20px;width: 35px;height: 45px;z-index: 15;}
+.Abo_banner .arrow-right {background: url(../images/icon.png); background-position-x: -22px; background-position-y: 45px;position: absolute;right: -280px;top: 50%;margin-top: -20px;width: 35px;height: 45px;z-index: 15;}
+.Abo_banner.stars-info {height: 110px;position: absolute;bottom: 0;text-align: center;width: 100%;-webkit-transition: all linear 250ms;transition: all linear 250ms;color: #fff;}
+.Abo_bannera:hover .stars-info {height: 95px;border-bottom: 0 none;}
+.Abo_banner.stars-info .name {font-size: 20px;height: 26px;line-height: 26px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.Abo_bannera:hover .stars-info .name {margin: 8px 0 0;}
+.Abo_banner.stars-info .intro {padding: 0 10px;font-size: 14px;height: 18px;line-height: 18px;margin: 5px 0 30px;color: rgba(255,255,255,.7);overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.Abo_banner.stars-info .icon-shuffer-live {position: absolute;left: 50%;bottom: 38px;width: 29px;height: 9px;margin-left: -15px;background: url(../images/live.png) no-repeat;opacity: 1;-webkit-transition: all linear 250ms;transition: all linear 250ms;}
+.Abo_bannera:hover .stars-info .icon-shuffer-live {opacity: 0;}
+.Abo_banner.stars-info .number {display: inline-block;overflow: hidden;-webkit-transition: all linear 250ms;transition: all linear 250ms;height: 20px;line-height: 20px;width: 100%;position: absolute;bottom: 8px;left: 0;}
+.Abo_banner.stars-info .number i {width: 16px;height: 12px;display: inline-block;background: url(../images/eye.png) no-repeat center;margin-right: 8px;}
 .Abo_main{float: left;width: 860px;height: auto;}
 .Abo_nav{height: 50px;margin: 0 auto;width: 850px;border-bottom: 1px solid #f37321;}
 .Abo_nav span{display: block; height: 38px; width: 120px; line-height: 38px; float: left;margin-top: 12px;text-align: center;font-size: 16px;font-weight: bolder; cursor: pointer;}
 .Abo_nav span.active{ background: #f37321; color: white;}
-.Abo_navbar{height:300px;margin: 0 auto;width: 850px;border-bottom: 1px solid #eeeeee;position: relative;}
-.Abo_navlist{width: 100%;height: 100%;position: absolute;}
+.Abo_navbar{height:300px;margin: 0 auto;width: 850px;border-bottom: 1px solid #eeeeee;position: relative; }
+.Abo_navlist{width: 100%;height: 100%;position: absolute; display: none;}
 .Abo_navlist ul{ width: 485px;height: 100%;float: left; overflow: hidden;}
 .Abo_navlist ul:nth-child(2){width:360px}
 .Abo_navlist ul li{height: 37px; line-height: 37px;font-size: 13px; width: 100%;overflow: hidden;}
 .Abo_navlist ul li span:nth-child(1){display: block; width: 70px;text-align: right; float: left;color: #666666;}
 .Abo_navlist ul li span:nth-child(2){color: #333333;} 
+.Abo_navlist p{font-size: 14px; color: #333333;text-indent: 2em;line-height: 30px;margin-top: 20px;}
 .Abo_main_title{width: 100%;height: 40px;line-height: 40px;font-size: 16px; font-weight: bold; text-indent: 30px;}
 .lbfx{height:300px;margin: 0 auto;width: 848px;border: 1px solid #eeeeee;overflow: hidden;}
 .lbfx ul{width: 810px;height:280px; margin-top: 20px;}
 .lbfx ul li{width: 270px;height: 100%; float: left;}
-.lbfx .img{}
+.lbfx ul li p:nth-child(2){color: #333333;font-size: 16px;height: 24px;line-height: 24px;margin-top: 5px;text-indent: 20px;}
+.lbfx ul li p:nth-child(2) span {background: #79bf1c;color: white;padding: 3px 10px;border-radius: 3px;}
+.lbfx ul li p:nth-child(3){color: #999999;font-size: 12px;height: 20px;line-height: 20px;text-indent: 20px;}
+.lbfx .img1{width: 100%;height: 205px;overflow: hidden;}
+.Abo_main_title a{float: right; margin-right: 20px;font-size: 12px;color: #CCCCCC;}
 .dtzx{height:160px;margin: 0 auto;width: 848px;border: 1px solid #eeeeee;overflow: hidden;}
-
+.dtzx_ul{width: 670px;margin-left: 20px;}
+.dtzx_li{width: 100%;height: 104px;border-bottom: 1px dashed   #e6e6e6;}
+.dtzx_li p:nth-child(1){height: 56px;line-height: 56px;}
+.dtzx_li p:nth-child(1) span:nth-child(1){font-size: 12px;color: #999999; border: 1px solid #e6e6e6; padding: 3px 10px;margin-right: 20px;border-radius: 3px;}
+.dtzx_li p:nth-child(1) a{font-size: 14px;color: #333333;}
+.dtzx_li p:nth-child(1) span:nth-child(3){font-size: 12px;color: #99a5b2;float: right;margin-right: 10px;}
+.dtzx_li p:nth-child(2){height: 50px;line-height: 25px;font-size: 14px;color: #656565;overflow: hidden;}
 
 .Abo_main_r{width: 340px;float: right;overflow: hidden;position: relative;background: url(../images/titl_03.jpg) no-repeat top center;background-size: 100%;}
-.Abo_form{width:338px;height:312px;border: 1px solid #e3e3e3;margin-top: 58px; }
+.Abo_form{width:338px;height:312px;border: 1px solid #e3e3e3;margin-top: 58px;position: relative; }
 .Abo_form .name,.Abo_form .phone1{ display: block;width: 240px;height: 38px;margin: 0 auto; background: #f5f5f5;cursor: pointer; }
 .Abo_form .name{margin-top: 50px;}
 .Abo_form .phone1{margin-top: 25px;}
@@ -109,6 +130,7 @@ footer{width: 100%;height: 257px; background: #eeeeee;}
 .Abo_form .name input,.Abo_form .phone1 input{width: 180px;height: 36px;line-height: 36px;font-size: 14px;border: none;background: #f5f5f5;outline: medium;}
 .Abo_form .pleace{height: 58px;line-height: 58px;font-size: 14px;width: 100%;text-align: center;color: #cbcaca;border-bottom: 1px solid #e3e3e3;}
 .Abo_form  .nj_ok{width: 300px;height: 40px;margin: 30px auto 0 auto; border-radius: 5px; background: #f37321; text-align: center;color: white; font-size: 16px; border: none; outline: medium; display: block;}
+.waring1{position:absolute;left:50px;top: 154px; font-size: 12px;color: red; display: none;}
 .Abo_yh{width: 100%;height: 80px;background: #fff4ed;margin-top: 15px;}
 .Abo_yh_bg{background: url(../images/yh_12.jpg) no-repeat left top; height: 32px;}
 .Abo_yh_txt{font-size: 12px;width: 210px; color: black; margin: 0 auto;line-height: 16px;}
@@ -118,3 +140,122 @@ footer{width: 100%;height: 257px; background: #eeeeee;}
 .Abo_form2 li{ width: 115px; height: 20px; margin-top: 20px; float: left; font-size: 14px;}
 .Abo_form2 li input{ margin-right: 5px;display: block; margin-top: 4px;float: left;}
 .Abo_form2 .nj_ok{width: 115px;height: 40px;margin: 30px auto 0 auto; border-radius: 5px; background: #f37321; text-align: center;color: white; font-size: 16px; border: none; outline: medium; display: block;}
+
+.Abo_form_mask{width: 100%;height: 100%;background: rgba(0,0,0,.5);position: absolute;z-index: 9999; display: none;}
+.Abo_form3{width: 360px;height: 350px;background:white; padding: 30px 40px; position:fixed;right:50%; margin-right:-180px;top: 50%;margin-top: -175px;z-index: 999;overflow: hidden;}
+.Abo_form3 .close{ position: absolute;top: 0;right: 0;width: 37px; height: 42px; cursor: pointer;background: url(../images/close_07.jpg);}
+.Abo_form3 .waring{font-size: 12px; color:red;position: absolute; top: 198px; left: 40px; display: none;}
+.Abo_form3 .tit{height: 39px;font-size: 16px;color: #333333;border-bottom: 1px solid #f5f5f5;}
+.Abo_form3 .name,.Abo_form3 .phone1{ display: block;width:100%;height: 38px;cursor: pointer;float: left;}
+.Abo_form3 .name{margin-top: 20px;}
+.Abo_form3 select{outline: medium;float:left;width: 90px;height: 37px;margin-left: 15px; border: 1px solid #E6E6E6;font-size: 14px;}
+.Abo_form3 .phone1{margin-top: 25px;}
+.Abo_form3 .name img,.Abo_form3 .phone1 img{display: block; width: 37px;height: 37px; float: left;}
+.Abo_form3 .name input,.Abo_form3 .phone1 input{width: 217px;height: 35px;line-height: 35px;font-size: 14px;border: none;background: #f5f5f5;outline: medium; float: left;}
+.Abo_form3 .phone1 input{width: 322px;}
+.Abo_form3 .pleace{height: 58px;line-height: 58px;font-size: 14px;width: 100%;text-align: center;color: #cbcaca;border-bottom: 1px solid #e3e3e3;}
+.Abo_form3 .nj_ok{float:left;width: 100%;height: 40px;margin: 30px auto 0 auto; border-radius: 5px; background: #f37321; text-align: center;color: white; font-size: 16px; border: none; outline: medium; display: block; margin-bottom: 50px;}
+.Abo_form3 .txt{font-size: 12px; color: #999999;line-height: 20px;}
+
+.map{width: 100%;height: 450px;margin-top: 30px;background: aqua;}
+.mapbox { width: 100%; height: 100%; }
+#container3 { width: 80%; height: 100%; }
+.mapbox .list { width: 20%; height: 100%; background: #eee; }
+.mapbox .list li { height: 34px; line-height: 34px; padding-left: 20px; }
+.mapbox .list li.active a { color: red; }
+.mapbox .title { font-size: 14px; font-weight: bold; color: #cc5522; }
+.mapbox .content { font-size: 13px; color: #333; }
+.mapbox .fl { float: left; }
+
+.Abo_tit{height: 70px;line-height: 70px;color: #333333;font-size: 22px;text-align: center;}
+.yxhy_ul{width: 1230px;}
+.yxhy_li{width: 290px;height: 290px;overflow: hidden; float: left; border: 1px solid #E6E6E6;margin-right: 10px; }
+.yxhy_li .Guess_bar{margin-top: 0;}
+.profile.line.Abo{margin-top: 50px;}
+.much{height: 50;line-height: 50px;font-size: 12px; color: #888888;}
+.much a{padding: 0 3px; color: #888888;}
+.much a:last-child{color: #f37321;float: right;}
+/*列表页*/
+.list_banner{height: 106px; width: 100%; background: url(../images/list_02.jpg) no-repeat center center;}
+.list_title{width: 100%; height: 56px;line-height: 56px;font-size: 12px;}
+.list_left{width: 860px; float: left; overflow: hidden;}
+.list_left_bg{ height: 120px; width: 100%; background: url(../images/list_05.jpg) no-repeat;}
+.list_left_title{margin-top:15px;width:858px; background: white; height: 38px; line-height: 38px;border: 1px solid #e6e6e6;}
+.list_left_title span{float: right; margin-right: 10px;}
+.list_left_title a{font-size: 13px; color: #f37321;}
+.list_left_title .te{width: 120px; display: block; height: 100%; text-align:  center; float: left;background: #fff4ee;}
+.list_left_title span a{ margin: 0 5px;}
+.list_left_ul{width: 100%}
+.list_left_li{width: 858px; height: 278px;border: 1px solid #e6e6e6; background: white;margin-top: 30px;overflow: hidden;}
+.list_left_li .top{ height: 230px;overflow: hidden;width: 100%;}
+.list_left_li .top img{float:left;display: block;overflow: hidden;height: 100%;width: 300px;}
+.list_left_li .top .cen{float:left;padding-left:15px;height: 229px; width: 354px; border-bottom: 1px solid #e6e6e6; border-right: 1px solid #e6e6e6;}
+.list_left_li .top .cen p:nth-child(1){height: 78px;line-height: 78px;font-size: 22px;font-weight: bold;font-family: "黑体";}
+.list_left_li .top .cen p:nth-child(1) a{color: #000000;}
+.list_left_li .top .cen p:nth-child(2){background: url(../images/loca_16.jpg) no-repeat left center;text-indent: 20px;height: 36px;line-height: 36px;font-size: 12px;color: #989a99;}
+.list_left_li .top .cen p:nth-child(3){height: 40px;line-height: 40px;color:#f95b00;font-size: 14px;text-indent: 5px;}
+.list_left_li .top .cen p:nth-child(4){height: 26px; margin-top: 15px;}
+.list_left_li .top .cen p:nth-child(4) span{border: 1px solid#E6E6E6; font-size: 12px;padding: 5px 9px; margin: 0 5px;}
+.list_left_li .top .right{float: left;height: 100%;width: 188px; position: relative;}
+.list_left_li .top .right p{ font-size: 25px; color: #f47526; width: 100%;text-align: center;margin-top: 95px}
+.list_left_li .top .right p span{font-size: 14px;}
+.list_left_li .top .right .te{position:absolute;bottom: 0;width: 188px; height: 50px;line-height: 50px; background: #f47526;color: white;font-size: 14px;text-align: center;cursor: pointer;}
+.list_left_li .bottom{height: 48px; line-height: 50px; background: url(../images/list_yh.jpg) no-repeat left center;font-size: 14px;color: #676769;text-indent: 77px;}
+
+/*分页器样式*/
+.page{margin-top: 30px;	width: 100%;height: 49px;text-align: center; margin-bottom: 50px;}
+.page .inner{text-align: center; overflow: hidden; padding: 10px 5px; clear: both; font-size: 0;}
+.page span {border-color: #DDD;color: #AAA;   background-color: #FFF; display: inline-block; margin-left: 5px; border-width: 1px;
+ border-style: solid; font-weight: 400; font-size: 12px; font-family: 'Microsoft Yahei'; padding: 5px 10px;}
+.page strong { background-color: #cccccc; border: 1px solid #cccccc; color: #FFF; display: inline-block; margin-left: 5px; font-weight: 400;
+ font-size: 12px; font-family: 'Microsoft Yahei'; padding: 5px 10px;}
+.page a { border-color: #BBB; color: #666; background-color: #FFF; display: inline-block; margin-left: 5px; border-width: 1px; border-style: solid;
+ font-weight: 400; font-size: 12px; font-family: 'Microsoft Yahei'; padding: 5px 10px; }
+.page a:hover{	background-color: #FFA500; border-color: #FFA500; color: white; transition-property: border-color,background-color,color; transition-duration: .5s;
+ transition-timing-function: ease;}
+ /*分页器end*/
+.list_right{width: 290px; float: right; overflow: hidden;}
+/*右侧轮播图*/
+.lun_box{height: 175px;width: 100%;position: relative;background: red;}
+#banner{width: 290px;height: 175px;position: relative; background:orchid;overflow: hidden;}
+#banner	.img{position: absolute;top: 0;left: 0;}
+#banner	.img li{width: 400px;height: 300px;float: left;}
+#banner	.num{position: absolute;bottom: 10px;width: 100%;text-align: center;font-size: 0;}
+#banner	.num li{width: 10px;height: 10px;background:rgba(0,0,0,0.5);display: block;border-radius: 100%;display: inline-block;margin: 0 5px;cursor: pointer;}
+#banner .btnn{display: none; cursor: pointer;}
+#banner	.btnn span{display: block;width: 40px;height: 60px;cursor:pointer;}
+#banner	.btnn .prevlist{position: absolute;left: 0;top: 50%;margin-top: -30px; background: url(../images/prev.png);}
+#banner	.btnn .nextlist{position: absolute;right: 0;top: 50%;margin-top: -30px;background: url(../images/next.png);}
+#banner	.num .active{background-color:red;}
+/*end 右侧轮播图*/
+.Guess{background: white;width: 270px;padding: 0 10px; height: 510px; margin-top: 30px;}
+.Guess .title{height: 40px;line-height: 40px;border-bottom: 2px solid #4aab98; ;color: #00ab89;}
+.Guess ul li{height: 60px;width: 100%;overflow: hidden; padding: 15px 0;border-bottom: 1px solid #e6e6e6;}
+.Guess ul li img{float: left; display: block;width: 90px;height: 60px; margin-right: 10px;}
+.Guess ul li a{color: #4aab98;}
+.Guess ul li p{color: #a8a4b3; margin-top: 22px;}
+.profile.list{padding: 50px 0;}
+
+/*列表详细页*/
+.de_list{background: white;}
+.de_list_ul{width: 99%;margin: 0 auto;}
+.de_list_li{height: 166px;width: 100%;padding: 20px 0 30px;overflow: hidden;border-bottom: 1px solid #E6E6E6;}
+.de_list_li img{display: block;height: 100%;width: 260px;float: left;overflow: hidden;margin-right: 30px;}
+.de_list_li p:nth-child(2){font-size: 19px;margin-bottom: 15px;font-weight: bold;}
+.de_list_li p:nth-child(2) a{color: black;}
+.de_list_li p:nth-child(3){height: 50px;line-height: 25px;color: #aba8af; font-size: 14px; overflow: hidden;}
+.Guess_bar{width: 100%;height: 320px;margin-top: 10px;background: white;overflow: hidden;}
+.Guess_bar img{display: block;width:300px;height: 215px;overflow: hidden;}
+.Guess_bar p{text-indent: 20px;}
+.Guess_bar p:nth-child(2){height: 40px;line-height: 40px;}
+.Guess_bar p a{font-size: 18px;color: black;width: 50%;height: 100%;overflow: hidden;float: left;text-overflow: ellipsis;white-space: nowrap;}
+.Guess_bar p span:nth-child(2){display: block;float: right;color: #f36e19;margin-right: 10px;font-size: 18px;font-weight: bold;}
+.Guess_bar p span:nth-child(2) .te{font-size: 12px;}
+.Guess_bar p:nth-child(3){background: url(../images/loca_16.jpg) no-repeat left center; height: 20px;line-height: 20px;margin-left: 20px;font-size: 12px;color:#9aa2b6}
+/*类容详细页*/
+.text_box{width: 800px;min-height: 1324px;margin: 0 auto 50px auto;}
+.text_box h2{ text-align: center; height: 60px;line-height: 70px;border-bottom: 1px solid #C0C0C0;}
+.text_ul{height: 40px;line-height: 40px;width: 100%;font-size: 12px;color: black;}
+.text_ul li{float: left; margin-right: 100px;}
+.text_box p{font-size: 14px; color: #000000;line-height: 30px;text-indent: 2em;}
+.diguo{width: 100%;height: 50px;background: aqua;text-align: center; font-size: 30px;}
