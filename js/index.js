@@ -77,10 +77,42 @@ $(function() {
 /*关于我们的*/
 $(function(){
 	$('.Abo_navlist').eq(0).show();
-	$('.Abo_nav span').on('click',function(){
+	$('.Abo_nav1').on('click',function(){
 		var num = $(this).index();
-		$('.Abo_nav span').eq(num).addClass('active').siblings().removeClass('active')
+		$('.Abo_nav1').eq(num).addClass('active').siblings().removeClass('active')
 		$('.Abo_navlist').eq(num).show().siblings().hide()
+	})
+})
+$(function(){
+	$('.open_photo').click(function(){
+		$('#mask_photo').show()
+	})
+	$('#photo .close').click(function(){
+		$('#mask_photo').hide()
+	})
+})
+$(function(){
+	$('.innter_l').eq(0).show();
+	$('.photo_nav_main').eq(0).show();
+	$('.photo_nav span').on('click',function(){
+		var num = $(this).index();
+		$('.photo_nav span').eq(num).addClass('active').siblings().removeClass('active')
+		$('.innter_l').eq(num).show().siblings().hide()
+		$('.photo_nav_main').eq(num).show().siblings().hide()
+	})
+})
+$(function(){
+	$('.fx li').eq(0).show();
+	$('.fx .pnm_li').on('click',function(){
+		var num = $(this).index();
+		$('.fx li').eq(num).show().siblings().hide()
+	})
+})
+$(function(){
+	$('.wg li').eq(0).show();
+	$('.wg .pnm_li').on('click',function(){
+		var num = $(this).index();
+		$('.wg li').eq(num).show().siblings().hide()
 	})
 })
 /*列表页右侧轮播*/
@@ -174,3 +206,4 @@ $(function(){
 		        });
 		        autoPlay();
 		})
+
